@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="biller-virtualaccount-channel_mux" realm="biller-virtualaccount-channel_mux">
+    <out>biller-virtualaccount-channel-in</out>
+    <in>biller-virtualaccount-channel-out</in>
+    <ready>biller-virtualaccount-channel.ready</ready>
+    <unhandled>biller-virtualaccount-channel-unhandled</unhandled>
+</mux>

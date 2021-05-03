@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<channel-adaptor class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2" name="biller-virtualaccount-channel" realm="biller-virtualaccount-channel">
+    <channel class="org.jpos.iso.channel.ASCIIChannel" logger="Q2" packager="co.id.middleware.router.iso.ISO87APackager">
+
+    <property name="host" value="localhost"/>
+    <property name="port" value="7005"/>
+        
+    </channel>
+    <in>biller-virtualaccount-channel-in</in>
+    <out>biller-virtualaccount-channel-out</out>
+    <ready>biller-virtualaccount-channel.ready</ready>
+    <unhandled>biller-virtualaccount-channel-unhandled</unhandled>
+    <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>
